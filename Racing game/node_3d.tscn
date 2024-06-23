@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://hfxdld76y0e7"]
+
+[ext_resource type="PackedScene" uid="uid://1xsmolqniurc" path="res://game.tscn" id="2_iaamf"]
+[ext_resource type="PackedScene" uid="uid://dhxwmi8qc4ena" path="res://player.tscn" id="4_upotc"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("4_upotc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.104419, 6.80276, -0.052807)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.2517, 0.185261)
+
+[node name="game" parent="." instance=ExtResource("2_iaamf")]
+transform = Transform3D(2.98122e-07, 0, -25, 0, 25, 0, 25, 0, 2.98122e-07, 0, 0, 0)
