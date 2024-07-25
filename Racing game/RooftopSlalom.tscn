@@ -142,7 +142,7 @@ data = PackedVector3Array(0.5, 0, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5,
 [node name="Node3D" type="Node3D"]
 
 [node name="RoadDirtPavement" type="MeshInstance3D" parent="."]
-transform = Transform3D(93.9693, -0.34202, 0, 34.202, 0.939693, 0, 0, 0, 40, 30, 17, 0)
+transform = Transform3D(98.4808, -0.173648, 1.39515e-14, 17.3648, 0.984808, -1.39515e-14, -2.82922e-14, 4.04054e-16, 40, 30, 17, 0)
 mesh = ExtResource("1_eiprd")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadDirtPavement"]
