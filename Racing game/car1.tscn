@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cmtvd18b4arms"]
+[gd_scene load_steps=24 format=3 uid="uid://cmtvd18b4arms"]
 
 [ext_resource type="Script" path="res://car1.gd" id="1_pvp8v"]
 
@@ -473,16 +473,22 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_gv1f2")
 
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_h5ih2"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:rotation")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+
 [node name="car1" type="VehicleBody3D"]
 gravity_scale = 4.0
+center_of_mass_mode = 1
 script = ExtResource("1_pvp8v")
 
 [node name="Body" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_imhey")
 skeleton = NodePath("")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 0, 1.30017, -5.05341)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("ConvexPolygonShape3D_rm00i")
@@ -507,7 +513,7 @@ wheel_roll_influence = 0.01
 wheel_rest_length = 0.2
 wheel_friction_slip = 1.1
 suspension_travel = 0.15
-suspension_stiffness = 80.0
+suspension_stiffness = 100.0
 
 [node name="Mesh" type="MeshInstance3D" parent="BackRight"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.35, 1.65)
@@ -527,10 +533,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.35, -1.95)
 mesh = SubResource("ArrayMesh_wgvfu")
 skeleton = NodePath("")
 
-[node name="Mesh" type="MeshInstance3D" parent="."]
-mesh = SubResource("ArrayMesh_lx3yf")
-skeleton = NodePath("")
-
 [node name="BackLeft" type="VehicleWheel3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -0.35, -1.65)
 use_as_traction = true
@@ -538,4 +540,25 @@ wheel_roll_influence = 0.01
 wheel_rest_length = 0.2
 wheel_friction_slip = 1.1
 suspension_travel = 0.15
-suspension_stiffness = 80.0
+suspension_stiffness = 100.0
+
+[node name="Mesh" type="MeshInstance3D" parent="BackLeft"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.35, 1.65)
+mesh = SubResource("ArrayMesh_lx3yf")
+skeleton = NodePath("")
+
+[node name="CentreOFMass" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, -0.392, 0.7)
+
+[node name="CameraPivot" type="Node3D" parent="."]
+top_level = true
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(-1, -8.3791e-09, 8.70203e-08, 3.47181e-16, 0.995396, 0.0958458, -8.74228e-08, 0.0958458, -0.995396, 0, 1.78211, -5.05341)
+current = true
+
+[node name="ReverseCamera" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, -3.82217e-16, 3.47181e-16, 3.47181e-16, 0.995396, 0.0958458, -3.82217e-16, -0.0958458, 0.995396, 0, 1.78211, 5.16386)
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_h5ih2")
