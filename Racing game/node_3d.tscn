@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://hfxdld76y0e7"]
+[gd_scene load_steps=5 format=3 uid="uid://hfxdld76y0e7"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_l1my3"]
 [ext_resource type="PackedScene" uid="uid://1xsmolqniurc" path="res://game.tscn" id="2_iaamf"]
 [ext_resource type="PackedScene" uid="uid://cmtvd18b4arms" path="res://car1.tscn" id="2_wf143"]
+[ext_resource type="AudioStream" uid="uid://deu61ev86yx61" path="res://TitleMusic.mp3" id="4_wm226"]
 
 [node name="main" type="Node3D"]
 script = ExtResource("1_l1my3")
@@ -39,6 +40,10 @@ offset_right = 687.0
 offset_bottom = 157.0
 text = "SUPER AWESOME DRIFTER RACER
 "
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer"]
+stream = ExtResource("4_wm226")
+autoplay = true
 
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("res://car1.tscn")

@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cp8kw7u2ooxnd"
-path.s3tc="res://.godot/imported/balconyLadder_bottom.png-f558d4737db2b0c464915c44f8a345c9.s3tc.ctex"
+uid="uid://cwytd6m7256l8"
+path.s3tc="res://.godot/imported/rock_grassy_rock_grassy_lowres.png-ee7abe34a5b0551b5316cbb1bc89a2f6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "33558fb4a65afa146297a8ba7478995b"
+}
 
 [deps]
 
-source_file="res://Side/balconyLadder_bottom.png"
-dest_files=["res://.godot/imported/balconyLadder_bottom.png-f558d4737db2b0c464915c44f8a345c9.s3tc.ctex"]
+source_file="res://Side/exports/rocks/rock_grassy_rock_grassy_lowres.png"
+dest_files=["res://.godot/imported/rock_grassy_rock_grassy_lowres.png-ee7abe34a5b0551b5316cbb1bc89a2f6.s3tc.ctex"]
 
 [params]
 

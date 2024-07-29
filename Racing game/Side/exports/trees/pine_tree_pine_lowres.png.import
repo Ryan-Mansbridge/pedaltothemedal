@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cp8kw7u2ooxnd"
-path.s3tc="res://.godot/imported/balconyLadder_bottom.png-f558d4737db2b0c464915c44f8a345c9.s3tc.ctex"
+uid="uid://bw18tdbslldem"
+path.s3tc="res://.godot/imported/pine_tree_pine_lowres.png-0b39be891ff3ee08bf46146f422970a4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "97e48ef9d9c409d0abcc2cd8e679b9e4"
+}
 
 [deps]
 
-source_file="res://Side/balconyLadder_bottom.png"
-dest_files=["res://.godot/imported/balconyLadder_bottom.png-f558d4737db2b0c464915c44f8a345c9.s3tc.ctex"]
+source_file="res://Side/exports/trees/pine_tree_pine_lowres.png"
+dest_files=["res://.godot/imported/pine_tree_pine_lowres.png-0b39be891ff3ee08bf46146f422970a4.s3tc.ctex"]
 
 [params]
 
