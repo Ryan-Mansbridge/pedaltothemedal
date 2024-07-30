@@ -1,7 +1,20 @@
-[gd_scene load_steps=8 format=3 uid="uid://1xsmolqniurc"]
+[gd_scene load_steps=21 format=3 uid="uid://1xsmolqniurc"]
 
 [ext_resource type="ArrayMesh" uid="uid://n26emelm5t3i" path="res://Models/OBJ format/road_straight.obj" id="1_nmpcv"]
 [ext_resource type="ArrayMesh" uid="uid://swxl6qtre748" path="res://Models/OBJ format/road_curve.obj" id="2_q68wc"]
+[ext_resource type="ArrayMesh" uid="uid://bj26ifnfctoys" path="res://Models/OBJ format/road_crossing.obj" id="3_xvla5"]
+[ext_resource type="ArrayMesh" uid="uid://dvxs7dpnaiblq" path="res://Models/OBJ format/road_crossroadLine.obj" id="4_3celr"]
+[ext_resource type="ArrayMesh" uid="uid://l08rno3550tx" path="res://Models/OBJ format/road_intersectionLine.obj" id="5_7o66k"]
+[ext_resource type="ArrayMesh" uid="uid://bfp8qrvpissra" path="res://Models/OBJ format/road_split.obj" id="7_5hkqk"]
+[ext_resource type="ArrayMesh" uid="uid://djawkirmpn4wi" path="res://Models/OBJ format/road_bendSquare.obj" id="8_j67ml"]
+[ext_resource type="ArrayMesh" uid="uid://cj0muaxp8b85b" path="res://Models/OBJ format/road_roundabout.obj" id="8_nk6xv"]
+[ext_resource type="ArrayMesh" uid="uid://baa280hoarvkw" path="res://Models/OBJ format/road_slantHigh.obj" id="9_0fyyu"]
+[ext_resource type="ArrayMesh" uid="uid://bu47nq7y4i7du" path="res://Models/OBJ format/road_slantCurve.obj" id="10_cnd1q"]
+[ext_resource type="ArrayMesh" uid="uid://0do0y4u6f60b" path="res://Models/OBJ format/road_bridge.obj" id="11_x8nca"]
+[ext_resource type="ArrayMesh" uid="uid://baf3ytwc0bhp3" path="res://Models/OBJ format/road_bend.obj" id="12_fjmsv"]
+[ext_resource type="ArrayMesh" uid="uid://ckcvxa8fobibs" path="res://Models/OBJ format/road_intersection.obj" id="13_4yubl"]
+[ext_resource type="ArrayMesh" uid="uid://cfb5nl8kofqex" path="res://Models/OBJ format/road_curveIntersection.obj" id="14_oik55"]
+[ext_resource type="ArrayMesh" uid="uid://biyen3rnobg07" path="res://Models/OBJ format/road_drivewaySingle.obj" id="15_tcbrt"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_bc2ug"]
 data = PackedVector3Array(-0.5, 0.01, -0.4, 0.5, 0.02, -0.4, 0.5, 0.01, -0.4, 0.5, 0.02, -0.4, -0.5, 0.01, -0.4, -0.5, 0.02, -0.4, 0.5, 0, -0.5, -0.5, 0.02, -0.5, -0.5, 0, -0.5, -0.5, 0.02, -0.5, 0.5, 0, -0.5, 0.5, 0.02, -0.5, 0.5, 0.01, 0.4, -0.5, 0.02, 0.4, -0.5, 0.01, 0.4, -0.5, 0.02, 0.4, 0.5, 0.01, 0.4, 0.5, 0.02, 0.4, 0.5, 0, -0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, 0.5, 0, -0.5, -0.5, 0, -0.5, 0.5, 0.02, -0.4, -0.5, 0.02, -0.5, 0.5, 0.02, -0.5, -0.5, 0.02, -0.5, 0.5, 0.02, -0.4, -0.5, 0.02, -0.4, -0.5, 0, 0.5, 0.5, 0.02, 0.5, 0.5, 0, 0.5, 0.5, 0.02, 0.5, -0.5, 0, 0.5, -0.5, 0.02, 0.5, 0.5, 0.02, 0.5, -0.5, 0.02, 0.4, 0.5, 0.02, 0.4, -0.5, 0.02, 0.4, 0.5, 0.02, 0.5, -0.5, 0.02, 0.5, 0.5, 0.01, 0.4, 0.5, 0.02, 0.5, 0.5, 0.02, 0.4, 0.5, 0.01, 0.4, 0.5, 0, 0.5, 0.5, 0.02, 0.5, 0.5, 0.01, 0.3, 0.5, 0, 0.5, 0.5, 0.01, 0.4, 0.5, 0.01, 0.01, 0.5, 0, 0.5, 0.5, 0.01, 0.3, 0.5, 0.01, -0.01, 0.5, 0, 0.5, 0.5, 0.01, 0.01, 0.5, 0.01, -0.3, 0.5, 0, 0.5, 0.5, 0.01, -0.01, 0.5, 0.01, -0.4, 0.5, 0, 0.5, 0.5, 0.01, -0.3, 0.5, 0.01, -0.4, 0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, 0.02, -0.4, 0.5, 0, -0.5, 0.5, 0.01, -0.4, 0.5, 0, -0.5, 0.5, 0.02, -0.4, 0.5, 0.02, -0.5, -0.5, 0.01, -0.4, -0.5, 0, -0.5, -0.5, 0.02, -0.5, -0.5, 0, -0.5, -0.5, 0.01, -0.4, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0.01, -0.4, -0.5, 0.01, -0.3, -0.5, 0, 0.5, -0.5, 0.01, -0.3, -0.5, 0.01, -0.01, -0.5, 0, 0.5, -0.5, 0.01, -0.01, -0.5, 0.01, 0.01, -0.5, 0, 0.5, -0.5, 0.01, 0.01, -0.5, 0.01, 0.3, -0.5, 0, 0.5, -0.5, 0.01, 0.3, -0.5, 0.01, 0.4, -0.5, 0, 0.5, -0.5, 0.01, 0.4, -0.5, 0.02, 0.4, -0.5, 0, 0.5, -0.5, 0.02, 0.4, -0.5, 0.02, 0.5, -0.5, 0.02, -0.5, -0.5, 0.02, -0.4, -0.5, 0.01, -0.4, -0.5, 0.01, 0.3, 0.5, 0.01, 0.01, 0.5, 0.01, 0.3, 0.5, 0.01, 0.01, -0.5, 0.01, 0.3, -0.5, 0.01, 0.01, 0.5, 0.01, -0.01, -0.5, 0.01, -0.3, 0.5, 0.01, -0.3, -0.5, 0.01, -0.3, 0.5, 0.01, -0.01, -0.5, 0.01, -0.01, 0.5, 0.01, -0.3, -0.5, 0.01, -0.4, 0.5, 0.01, -0.4, -0.5, 0.01, -0.4, 0.5, 0.01, -0.3, -0.5, 0.01, -0.3, 0.5, 0.01, 0.4, -0.5, 0.01, 0.3, 0.5, 0.01, 0.3, -0.5, 0.01, 0.3, 0.5, 0.01, 0.4, -0.5, 0.01, 0.4, 0.5, 0.01, 0.01, -0.5, 0.01, -0.01, 0.5, 0.01, -0.01, -0.5, 0.01, -0.01, 0.5, 0.01, 0.01, -0.5, 0.01, 0.01)
@@ -22,7 +35,7 @@ data = PackedVector3Array(0.9829, 0, 0.7389, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0.9829, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.209633, -0.00474325, -0.00519037)
 
 [node name="RoadStraight" type="MeshInstance3D" parent="."]
-transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 1, 0.277, 0, 0)
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 1, 0.277, 0, -3.02134)
 mesh = ExtResource("1_nmpcv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadStraight"]
@@ -36,7 +49,7 @@ shape = SubResource("ConcavePolygonShape3D_bc2ug")
 shape = SubResource("ConcavePolygonShape3D_iyoxo")
 
 [node name="RoadStraight2" type="MeshInstance3D" parent="."]
-transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 1, 0.277, 0, 3.00207)
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 0.277, 0, 3.00207)
 mesh = ExtResource("1_nmpcv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadStraight2"]
@@ -56,6 +69,7 @@ shape = SubResource("ConcavePolygonShape3D_lq6oj")
 
 [node name="RoadCurve" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.277, 0, 0.5)
+visible = false
 mesh = ExtResource("2_q68wc")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadCurve"]
@@ -65,6 +79,7 @@ shape = SubResource("ConcavePolygonShape3D_0ftrl")
 
 [node name="RoadCurve3" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.7239, 0, 2.49829)
+visible = false
 mesh = ExtResource("2_q68wc")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadCurve3"]
@@ -75,6 +90,7 @@ shape = SubResource("ConcavePolygonShape3D_0ftrl")
 
 [node name="RoadCurve2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 11.277, 0, 2.5)
+visible = false
 mesh = ExtResource("2_q68wc")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadCurve2"]
@@ -84,6 +100,7 @@ shape = SubResource("ConcavePolygonShape3D_jj6t7")
 
 [node name="RoadCurve4" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.19249e-08, 0, 1, 0, 1, 0, -1, 0, 1.19249e-08, -10.7234, 0, 0.498702)
+visible = false
 mesh = ExtResource("2_q68wc")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RoadCurve4"]
@@ -93,3 +110,115 @@ shape = SubResource("ConcavePolygonShape3D_jj6t7")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.42712, 1.42093)
+
+[node name="RoadCrossing" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.22312, 0, 3.0022)
+mesh = ExtResource("3_xvla5")
+
+[node name="RoadCrossroadLine" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.223, 0, 3.00144)
+mesh = ExtResource("4_3celr")
+
+[node name="RoadCurve5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, -3.48787e-16, -1, 3.48787e-16, 1, -3.48787e-16, 1, -3.48787e-16, -4.37114e-08, -6.72249, 2.98023e-08, 4.475)
+mesh = ExtResource("2_q68wc")
+
+[node name="RoadIntersectionLine" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.22073, 0.000745714, 4.97198)
+mesh = ExtResource("5_7o66k")
+
+[node name="RoadSplit" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.188, 0.5, 4.974)
+mesh = ExtResource("7_5hkqk")
+
+[node name="RoadStraight3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.199, 0.5, 4.975)
+mesh = ExtResource("1_nmpcv")
+
+[node name="RoadBendSquare" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, -16.188, 0.5, 4.476)
+mesh = ExtResource("8_j67ml")
+
+[node name="RoadCurve6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.687, 0.5, 3)
+mesh = ExtResource("2_q68wc")
+
+[node name="RoadRoundabout" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.1192, 0, 0.509239)
+mesh = ExtResource("8_nk6xv")
+
+[node name="RoadSlantHigh" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 1.015, 0, 0, 0, 1, -16.6878, -0.0104853, 5.473)
+mesh = ExtResource("9_0fyyu")
+
+[node name="RoadSlantCurve" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.5, 3.48787e-16, -8.74228e-08, 8.71967e-16, 1, -3.48787e-16, 2.18557e-07, -3.48787e-16, -1, -11.213, 0, 4.97338)
+mesh = ExtResource("10_cnd1q")
+
+[node name="RoadBridge" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, -18.1328, 0, 2.50044)
+mesh = ExtResource("11_x8nca")
+
+[node name="RoadBendSquare2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 3.48787e-16, -1.50996e-07, 3.48787e-16, 1, -3.48787e-16, 1.50996e-07, -3.48787e-16, -1, -18.1335, 0, 5.47298)
+mesh = ExtResource("8_j67ml")
+
+[node name="RoadStraight4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-8.74228e-08, 3.48787e-16, 1, 6.97574e-16, 1, -3.48787e-16, -2, 3.48787e-16, -4.37114e-08, -18.134, 0, 3.98462)
+mesh = ExtResource("1_nmpcv")
+
+[node name="RoadSlantCurve2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 1, -20.1326, 0, 2.50143)
+mesh = ExtResource("10_cnd1q")
+
+[node name="RoadBend" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.131, 0, 0.509804)
+mesh = ExtResource("12_fjmsv")
+
+[node name="RoadBend2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, -22.119, 2.08165e-12, 2.503)
+mesh = ExtResource("12_fjmsv")
+
+[node name="RoadStraight5" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 1, -19.6212, 0, 0.509597)
+mesh = ExtResource("1_nmpcv")
+
+[node name="RoadStraight6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, -18.1307, 0, 1.507)
+mesh = ExtResource("1_nmpcv")
+
+[node name="RoadStraight7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, -22.1198, 0, -1.49036)
+mesh = ExtResource("1_nmpcv")
+
+[node name="RoadStraight8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.74846e-07, 3.48787e-16, 1, 1.39515e-15, 1, -3.48787e-16, -4, 3.48787e-16, -4.37114e-08, -22.1206, 0, -5.96517)
+mesh = ExtResource("1_nmpcv")
+
+[node name="RoadIntersection" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.1206, 0, -8.43439)
+mesh = ExtResource("13_4yubl")
+
+[node name="RoadCurveIntersection" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, -21.6201, 0, -2.98002)
+mesh = ExtResource("14_oik55")
+
+[node name="RoadDrivewaySingle" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.149, 0, -3.47871)
+mesh = ExtResource("15_tcbrt")
+
+[node name="RoadCurve7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.19249e-08, -3.48787e-16, -1, 3.48787e-16, 1, -3.48787e-16, 1, -3.48787e-16, 1.19249e-08, -18.6771, 0, -3.97836)
+mesh = ExtResource("2_q68wc")
+
+[node name="RoadCurve8" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.6923, 0.341891, -8.25179)
+mesh = ExtResource("2_q68wc")
+
+[node name="RoadIntersection2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, -20.041, 0, -8.47758)
+mesh = ExtResource("13_4yubl")
+
+[node name="RoadStraight9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-8.74228e-08, 3.48787e-16, 1, 6.97574e-16, 1, -3.48787e-16, -2, 3.48787e-16, -4.37114e-08, -18.1785, 0, -5.97583)
+mesh = ExtResource("1_nmpcv")
